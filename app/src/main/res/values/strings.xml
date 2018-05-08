@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FinalGP_test1</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="prompt_email">Email or Username</string>
+    <string name="title_activity_new_home">NewHomeActivity</string>
+
+    <string-array name="Country">
+        <item>"Egypt , Cairo"</item>
+    </string-array>
+
+    <string-array name="Cities">
+        <item>"Cairo"</item>
+        <item>"Barcelona"</item>
+        <item>"Paris"</item>
+        <item>"Rome"</item>
+    </string-array>
+
+    <string-array name="Class">
+        <item>"Economy"</item>
+        <item>"Business"</item>
+    </string-array>
+    <string-array name="currencyFrom">
+        <item>"Dollar"</item>
+        <item>"Egyptian Pound"</item>
+    </string-array>
+
+    <string-array name="currencyTo">
+        <item>"Egyptian Pound"</item>
+        <item>"Dollar"</item>
+    </string-array>
+
+    <string-array name="filterBy">
+        <item>"Price"</item>
+        <item>"Rating"</item>
+    </string-array>
+
+    <string name="title_activity_reserve_hotel">Map</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+</resources>

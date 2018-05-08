@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/ic_edit_black_24dp"/>
+    <item android:id="@+id/flights" android:title="Flights" android:icon="@drawable/ic_airplanemode_active_black_24dp"/>
+    <item android:id="@+id/hotels" android:title="Hotels" android:icon="@drawable/ic_hotel_black_24dp"/>
+    <item android:id="@+id/cars" android:title="Cars" android:icon="@drawable/ic_directions_car_black_24dp"/>
+    <item android:id="@+id/tours" android:title="Tours" android:icon="@drawable/ic_language_black_24dp"/>
+    <item android:id="@+id/currency_converter" android:title="Currency Converter" android:icon="@drawable/ic_monetization_on_black_24dp"/>
+    <item android:id="@+id/signOut" android:title="Signout" android:icon="@drawable/ic_cancel_black_24dp"/>
+</menu>

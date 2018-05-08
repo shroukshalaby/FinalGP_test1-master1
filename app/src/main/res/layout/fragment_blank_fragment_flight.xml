@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.BlankFragmentFlight">
+    <Spinner
+        android:id="@+id/spinner_fromCity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="77dp" />
+
+    <Spinner
+        android:id="@+id/spinner_toCity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinner_fromCity"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_toCity"
+        android:layout_alignLeft="@+id/spinner_fromCity"
+        android:layout_alignStart="@+id/spinner_fromCity"
+        android:text="From"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_toCity"
+        android:layout_alignLeft="@+id/spinner_toCity"
+        android:layout_alignStart="@+id/spinner_toCity"
+        android:text="To"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_fromCity"
+        android:layout_alignStart="@+id/spinner_fromCity"
+        android:layout_below="@+id/spinner_fromCity"
+        android:layout_marginTop="69dp"
+        android:text="Departure date"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/spinner_toCity"
+        android:layout_alignStart="@+id/spinner_toCity"
+        android:text="Return date"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/imageButton_calendarDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:background="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_calendarReturnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="20dp"
+       android:src="@android:drawable/ic_menu_my_calendar"
+        android:background="#2986ae"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/imageButton_calendarDepartureDate"
+        android:layout_marginTop="49dp"
+        android:text="Passengers"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView_numOfPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_upNumOfPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignTop="@+id/textView_numOfPassengers"
+        android:src="@android:drawable/arrow_up_float"
+        android:background="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_downNumberOfPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/textView_numOfPassengers"
+        android:src="@android:drawable/arrow_down_float"
+        android:background="#2986ae"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/textView5"
+        android:text="Class"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spinner_classDegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner_toCity"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignRight="@+id/spinner_toCity"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignTop="@+id/imageButton_downNumberOfPassengers"
+        android:entries="@array/Class"/>
+
+    <TextView
+        android:id="@+id/textView_fromDateHidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/imageButton_calendarDepartureDate"
+        android:layout_toRightOf="@+id/imageButton_calendarDepartureDate"
+        android:alpha="0"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_toDateHidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fromDateHidden"
+        android:layout_alignBottom="@+id/textView_fromDateHidden"
+        android:layout_toEndOf="@+id/imageButton_calendarReturnDate"
+        android:layout_toRightOf="@+id/imageButton_calendarReturnDate"
+        android:alpha="0"
+        android:layout_marginLeft="5dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button_searchForFlights"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton_downNumberOfPassengers"
+        android:background="@drawable/orangesliderr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Search" />
+
+
+</RelativeLayout>

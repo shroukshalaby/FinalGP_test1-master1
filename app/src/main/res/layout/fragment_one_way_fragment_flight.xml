@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.OneWayFragmentFlight">
+
+    <Spinner
+        android:id="@+id/spinner_fromCityOneWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="77dp" />
+
+    <Spinner
+        android:id="@+id/spinner_toCityOneWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinner_fromCityOneWay"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_toCityOneWay"
+        android:layout_alignLeft="@+id/spinner_fromCityOneWay"
+        android:layout_alignStart="@+id/spinner_fromCityOneWay"
+        android:text="From"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_toCityOneWay"
+        android:layout_alignLeft="@+id/spinner_toCityOneWay"
+        android:layout_alignStart="@+id/spinner_toCityOneWay"
+        android:text="To"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_fromCityOneWay"
+        android:layout_alignStart="@+id/spinner_fromCityOneWay"
+        android:layout_below="@+id/spinner_fromCityOneWay"
+        android:layout_marginTop="69dp"
+        android:text="Departure date"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/imageButton_calendarDepartureDateOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/imageButton_upNumOfPassengersOneWay"
+        android:layout_toStartOf="@+id/imageButton_upNumOfPassengersOneWay"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:background="#2986ae"/>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/imageButton_calendarDepartureDateOneWay"
+        android:layout_marginTop="49dp"
+        android:text="Passengers"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView_numOfPassengersOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_upNumOfPassengersOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignTop="@+id/textView_numOfPassengersOneWay"
+        android:src="@android:drawable/arrow_up_float"
+        android:background="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_downNumberOfPassengersOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/textView_numOfPassengersOneWay"
+        android:src="@android:drawable/arrow_down_float"
+        android:background="#2986ae"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:text="Class"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="250dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_classDegreeOneWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView7"
+        android:layout_alignLeft="@id/textView7"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Class"/>
+    <TextView
+        android:id="@+id/textView_fromDateHiddenOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/imageButton_calendarDepartureDateOneWay"
+        android:layout_toRightOf="@+id/imageButton_calendarDepartureDateOneWay"
+        android:alpha="0"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_toDateHiddenOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_fromDateHiddenOneWay"
+        android:layout_alignBottom="@+id/textView_fromDateHiddenOneWay"
+        android:alpha="0"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button_searchForFlightsOneWay"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton_upNumOfPassengersOneWay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Search"
+        android:background="@drawable/orangesliderr"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

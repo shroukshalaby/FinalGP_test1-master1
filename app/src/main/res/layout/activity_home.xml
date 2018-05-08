@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.HomeActivity">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mountain"
+        android:scaleType="fitStart"/>
+
+
+    <ImageButton
+        android:id="@+id/HotelimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sliderr"
+        android:src="@drawable/ic_hotel_black_24dp"
+        android:scaleType="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"/>
+    <TextView
+        android:id="@+id/hotelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:textColor="#FFF"
+        android:layout_below="@+id/HotelimageButton"
+        android:layout_marginLeft="35dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/FlightimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sliderr"
+        android:src="@drawable/ic_flight_black_24dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="110dp"/>
+    <TextView
+        android:id="@+id/fligtTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:textColor="#FFF"
+        android:layout_below="@+id/FlightimageButton"
+        android:layout_marginLeft="123dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/CarimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_directions_car_black_24dp"
+        android:background="@drawable/sliderr"
+        android:scaleType="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="205dp"/>
+
+    <TextView
+        android:id="@+id/carTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars"
+        android:textColor="#FFF"
+        android:layout_below="@+id/CarimageButton"
+        android:layout_marginLeft="225dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/ToursimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_language_black_24dp"
+        android:background="@drawable/sliderr"
+        android:scaleType="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="295dp"/>
+
+    <TextView
+        android:id="@+id/ToursTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tours"
+        android:textColor="#FFF"
+        android:layout_below="@+id/CarimageButton"
+        android:layout_marginLeft="310dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/GenerateItineraryBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Generate Itinerary"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/offersTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offers"
+        android:textSize="20dp"
+        android:textColor="#0b0941"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="302dp"
+            android:layout_marginLeft="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="200dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/redcircle"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:text="50%"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="23dp"/>
+            </android.support.v7.widget.CardView>
+            <ImageButton
+                android:id="@+id/hiltonImgBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hiltonegy"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:id="@+id/hiltonCheckView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Hilton Hotel"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="110dp"
+                android:background="@null"
+                android:textAllCaps="false"/>
+            <TextView
+                android:id="@+id/locationOffersTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahrir , Cairo"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"
+                android:textColor="#2b46bc"/>
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"/>
+        </android.support.v7.widget.CardView>
+</LinearLayout>
+</RelativeLayout>
